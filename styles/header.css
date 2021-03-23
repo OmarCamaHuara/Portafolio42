@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .logo{
+    padding: 8vh 0 2vh 8vh;
+    width: 40vh;
+}
+
+header nav a{
+    text-decoration: none;
+    position: relative;
+    margin-right: 8vh;
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-size: 3vh;
+    cursor: pointer;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 1s;
+}
+
+.buttonNav::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.3vh;
+    bottom: -8px;
+    left: 0;
+    background-color: rgb(243, 192, 20);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.buttonNav:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+}
+
+.buttonNav:hover{
+    font-size: 4vh;
+}
+
+.buttonCV {
+    position: relative;
+    padding: 2vh 3vh;
+    margin: 0vh 3vh;
+    font-size: 8vh;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.9s;
+    letter-spacing: 1vh;
+}
+
+.buttonCV:hover{
+    background-color: #032C6C;
+    color: white;
+    box-shadow: 1px 1px 1px #032C6C,
+                2px 2px 2px #032C6C,
+                5px 5px 5px #032C6C,
+                25px 25px 25px #032C6C,
+                50px 50px 50px #032C6C,
+                150px 150px 150px #032C6C,
+                450px 450px 450px #032C6C;
+}
