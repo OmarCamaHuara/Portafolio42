@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+:root{
+    --yellow: #F3C214;
+    --black: #0B1517;
+    --blue: #396DAF;
+    --lead: #D6D5D1;
+}
+/* header{
+    border: solid 1px red;
+} */
+
 header .container {
     display: flex;
     flex-direction: row;
@@ -17,7 +27,7 @@ header nav a{
     position: relative;
     margin-right: 8vh;
     font-family: 'Righteous', cursive;
-    color: white;
+    color: var(--lead);
     font-size: 3vh;
     cursor: pointer;
     transition: 2s;
@@ -55,6 +65,7 @@ header nav a{
     padding: 2vh 3vh;
     margin: 0vh 3vh;
     font-size: 8vh;
+    color: var(--yellow);
     text-align: center;
     text-transform: uppercase;
     overflow: hidden;
@@ -72,4 +83,9 @@ header nav a{
                 50px 50px 50px #032C6C,
                 150px 150px 150px #032C6C,
                 450px 450px 450px #032C6C;
+}
+.stick{
+    position: fixed;
+    top: 0;
+    width: 100%;
 }

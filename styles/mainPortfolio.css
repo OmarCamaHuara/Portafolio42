@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --yellow: #F3C214;
+    --black: #0B1517;
+    --blue: #396DAF;
+    --lead: #D6D5D1;
+}
+
+.mainPortafolio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.img-omar{
+    width: 35vh;
+    padding: 25vh 0 0 0;
+}
+.img-omar2{
+    width: 60vh;
+    padding-top: 30vh;
+}
+
+/* buttons */
+
+.languages button{
+    background-color: transparent;
+    border: none;
+    padding: 2vh;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+.languages button p{
+    font-family: 'Righteous';
+    font-size: 10vh;
+    color: var(--yellow);
+    /* -webkit-text-fill-color: var(--black);
+    -webkit-text-stroke: 0.5vh var(--yellow); */
+}
+
+/* nome */
+
+.iam{
+    padding: 3vh;
+    display: flex;
+    justify-content: flex-end;
+}
+.iam p {
+    font-size: 8vh;
+}
+.nome{
+    padding: 2vh;
+    display: flex;
+}
+.nome p{
+    padding: 0 1.5vh 0 0;
+    font-family: 'Philosopher';
+    font-size: 10vh;
+    color: var(--blue);
+}
+.nome p:nth-child(2){
+    color: var(--yellow);
+}
+
+/* Full Stack Developer Jr. */
+
+.cuerpoFullStack{
+    display: flex;
+    justify-content: center;
+    align-items: 100vh;
+}
+
+.cuerpoFullStack .fsd p{
+    font-size: 8vh;
+}
